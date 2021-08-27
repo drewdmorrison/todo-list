@@ -10,6 +10,7 @@ public class Task {
     private Date dueDate;
     private int taskStatusId;
     private int accountId;
+    private String taskStatusDesc;
 
     public int getTaskId() {
         return taskId;
@@ -57,5 +58,13 @@ public class Task {
 
     public void setAccountId(int accountId) {
         this.accountId = accountId;
+    }
+
+    public String getTaskStatusDesc() {
+        return taskStatusDesc;
+    }
+
+    public void setTaskStatusDesc(String taskStatusDesc) {
+        this.taskStatusDesc = taskStatusDesc;
     }
 }

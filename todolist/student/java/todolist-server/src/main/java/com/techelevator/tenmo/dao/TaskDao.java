@@ -7,6 +7,7 @@ import java.util.List;
 
 public interface TaskDao {
 
+    int getTasksLeft(int userId);
     public List<Task> getAllTasks(int userId);
     public Task getTaskById(int taskId);
     public String addTask(String taskName, String taskDescription, Date dueDate, int accountId);
